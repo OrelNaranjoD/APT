@@ -193,6 +193,9 @@
 ### 📄 Nuevas Historias de Usuario
 
 - AFS-129 - Crear CONTRIBUTING.md con reglas de contribución
+- AFS-130 - Crear rama develop para trabajar en nuevas funcionalidades
+- AFS-131 - Crear flujo de trabajo para validación de cambios en develop
+
 
 ## Akira Flex API
 
@@ -344,8 +347,8 @@
 - AFA-120 - Configurar ESLint con reglas específicas para NestJS
 - AFA-121 - Configurar Prettier para formato consistente
 - AFA-122 - Configurar script de start y build en package.json
-- AFA-123 - Configurar tsconfig.json para compatibilidad con librería compartida
-- AFA-124 - Configurar nodemon para entorno de desarrollo
+- AFA-123 - Instalar librería compartida y agregar carpeta 'definitions'
+- AFA-124 - Configurar automatización para entorno de desarrollo
 - AFA-125 - Configurar logging estructurado con Winston o Pino
 - AFA-126 - Configurar manejo de excepciones con filtros personalizados
 - AFA-127 - Configurar rate limiting para endpoints sensibles
@@ -387,7 +390,7 @@
 - AFA-154 - Crear CONTRIBUTING.md con reglas de contribución
 - AFA-155 - Configurar semantic-release para versionado automático
 - AFA-156 - Documentar reglas de SemVer para cambios en API
-- AFA-157 - Configurar changelog automático con semantic-release
+- AFA-157 - Configurar changelog automático
 - AFA-158 - Documentar dependencias externas y configuración de entorno
 - AFA-159 - Documentar estrategia de despliegue y rollback
 - AFA-160 - Documentar estructura de base de datos y relaciones
@@ -419,7 +422,7 @@
 - AFA-180 - Implementar endpoint para ver estado del sistema (health check)
 - AFA-181 - Implementar endpoint para envío de notificaciones automáticas (por ejemplo, para órdenes finalizadas o pagos pendientes).
 - AFA-182 - Implementar endpoint para gestionar promociones dinámicas.
-AFA-183: Implementar endpoints para gestionar sucursales y sus relaciones con empresas.
+- AFA-183 - Implementar endpoints para gestionar sucursales y sus relaciones con empresas.
 - AFA-184 - Implementar endpoint para calcular impuestos dinámicamente según ubicación o producto.
 - AFA-185 - Implementar integración con Redis o similar para caché distribuido en endpoints críticos (listados de productos, reportes).
 - AFA-186 - Configurar invalidación automática de caché tras cambios en entidades (por ejemplo, actualización de stock).
@@ -445,6 +448,12 @@ AFA-183: Implementar endpoints para gestionar sucursales y sus relaciones con em
 - AFA-206 - Configurar notificaciones automáticas (por ejemplo, via Slack o email) para errores críticos en producción.
 - AFA-207 - Configurar esquema de base de datos multi-tenant con aislamiento por empresa.
 - AFA-208 - Implementar endpoints para configurar reglas de negocio específicas por empresa.
+
+### 📄 Nuevas Historias de Usuario API
+
+- AFA-209 - Configuración inicial del proyecto NestJS
+- AFA-210 - Configurar commitlint y husky para validación de commits convencionales
+
 
 ## Akira Flex UI
 
