@@ -6,7 +6,7 @@
 
 - AFS-001 - Crear interfaz User con atributos base (id, name, email, status)
 - AFS-002 - Crear tipo UserStatus como enum compartido
-- AFS-003 - Crear interfaz UserWithRoles para vistas enriquecidas
+- AFS-003 - Crear interfaz UserWithRolesDto para vistas enriquecidas
 - AFS-004 - Crear tipo UserAuditEntry para trazabilidad
 - AFS-005 - Documentar contrato User con ejemplos de uso
 
@@ -195,7 +195,17 @@
 - AFS-129 - Crear CONTRIBUTING.md con reglas de contribución
 - AFS-130 - Crear rama develop para trabajar en nuevas funcionalidades
 - AFS-131 - Crear flujo de trabajo para validación de cambios en develop
+- AFS-138 - Readme técnico de la carpeta libs de la librería compartida
 
+### 🏢 Gestión de tenancy
+
+- AFS-132 – Definir interfaces base de autenticación y autorización para multi-tenancy
+- AFS-133 – Definir interfaces base de tenancies
+- AFS-134 – Definir interfaz de módulos funcionales
+- AFS-135 – Definir tipos auxiliares para contexto y tokens
+- AFS-136 – Definir enumeradores base para roles y permisos
+- AFS-137 – Definir DTOs de autenticación: LoginRequestDto, LoginResponseDto, JwtPayload
+- AFS-139 - Definir enumerador para ciclos de facturación a nivel plataforma.
 
 ## Akira Flex API
 
@@ -453,7 +463,30 @@
 
 - AFA-209 - Configuración inicial del proyecto NestJS
 - AFA-210 - Configurar commitlint y husky para validación de commits convencionales
+- AFA-228 - Implementar servicio de datos iniciales de la plataforma
 
+## Akira Flex API – Integración con Shared Lib (Tenancy & Auth)
+
+- AFA-211 - Implementar endpoints de autenticación usando DTOs y enums de la shared lib (LoginRequestDto, LoginResponseDto, JwtPayload, AdminRole)
+- AFA-212 - Implementar endpoints de gestión de AdminUser usando interfaz de la shared lib
+- AFA-213 - Implementar endpoints de gestión de tenants usando interfaz Tenant y CreateTenantDto de la shared lib
+- AFA-214 - Implementar endpoints para asignar/quitar módulos funcionales usando TenantModule y ModuleFeature de la shared lib
+- AFA-215 - Implementar middleware/interceptor para TenantContext usando tipo de la shared lib
+- AFA-216 - Configurar generación y validación de tokens JWT usando TokenOptions de la shared lib
+- AFA-217 - Registrar y consultar logs de acceso y acciones de AdminUser usando tipos/enums de la shared lib
+
+## 🧑‍💼 Gestión de Usuarios Plataforma
+
+- AFA-218 - Crear endpoint para registrar usuario administrador de plataforma
+- AFA-219 - Crear endpoint para actualizar usuario administrador
+- AFA-220 - Crear endpoint para eliminar usuario administrador
+- AFA-221 - Crear endpoint para obtener usuario administrador por ID
+- AFA-222 - Crear endpoint para listar usuarios administradores con paginación
+- AFA-223 - Implementar asignación de roles de plataforma a usuario
+- AFA-224 - Implementar validación de email único en contexto plataforma
+- AFA-225 - Implementar búsqueda de usuarios administradores por filtros
+- AFA-226 - Implementar activación/desactivación de usuario administrador
+- AFA-227 - Registrar historial de cambios en perfil de usuario administrador
 
 ## Akira Flex UI
 
@@ -695,3 +728,11 @@
 - AFU-186 - Diseñar flujo de onboarding en la UI con pasos guiados para configuración inicial.
 - AFU-187 - Diseñar vista para administrar configuraciones específicas por tenant.
 - AFU-188 - Implementar soporte para múltiples monedas y tasas de cambio en la UI.
+
+## Akira Flex UI – Integración con Shared Lib (Tenancy & Auth)
+
+- AFU-189 - Consumir endpoints de autenticación y gestión de AdminUser usando DTOs y enums de la shared lib
+- AFU-190 - Consumir endpoints de gestión de tenants y módulos usando interfaces y tipos de la shared lib
+- AFU-191 - Mostrar información de módulos funcionales y ciclo de facturación usando enums y tipos de la shared lib
+- AFU-192 - Implementar lógica de login y manejo de sesión usando LoginRequestDto, LoginResponseDto y JwtPayload de la shared lib
+- AFU-193 - Mostrar roles y permisos de AdminUser usando AdminRole de la shared lib
