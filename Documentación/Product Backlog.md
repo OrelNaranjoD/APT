@@ -214,8 +214,8 @@
 - AFA-001 - Implementar endpoint de login con JWT
 - AFA-002 - Implementar endpoint de logout
 - AFA-003 - Implementar endpoint de refresh token
-- AFA-004 - Configurar guardias de autenticación por rol
-- AFA-005 - Implementar middleware de auditoría de acciones
+- AFA-004 - Configurar guardias de autenticación por permisos
+- AFA-005 - Implementar interceptor de auditoría de acciones
 - AFA-006 - Configurar CORS y headers de seguridad
 - AFA-007 - Implementar validación de token en rutas protegidas
 - AFA-008 - Implementar recuperación de contraseña por email
@@ -464,6 +464,10 @@
 - AFA-209 - Configuración inicial del proyecto NestJS
 - AFA-210 - Configurar commitlint y husky para validación de commits convencionales
 - AFA-228 - Implementar servicio de datos iniciales de la plataforma
+- AFA-229 - Implementar auditoría de cambios en datos de la plataforma
+- AFA-230 - Implementar autenticación a nivel de plataforma administrativa
+- AFA-231 - Implementar autorización a nivel de tenant cliente
+- AFA-232 - Implementar tenants en la plataforma
 
 ## Akira Flex API – Integración con Shared Lib (Tenancy & Auth)
 
