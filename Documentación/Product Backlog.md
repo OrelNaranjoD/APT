@@ -693,7 +693,7 @@
 - AFU-150 - Documentar estructura de módulos y componentes
 - AFU-151 - Documentar integración con librería compartida
 - AFU-152 - Crear CONTRIBUTING.md con reglas de contribución
-- AFU-153 - Configurar semantic-release para versionado automático
+- AFU-153 - Configurar git actions para despliegue automático
 - AFU-154 - Documentar reglas de SemVer para cambios visuales
 - AFU-155 - Configurar changelog automático con commits convencionales
 - AFU-156 - Documentar convenciones de nombres y estructura de carpetas
@@ -712,26 +712,26 @@
 - AFU-166 - Implementar vista de checklist por tipo de servicio
 - AFU-167 - Mostrar vista de seguimiento en tiempo real
 - AFU-168 - Mostrar vista de auditoría visual por entidad
-- AFU-169 - Diseñar componente de notificaciones en tiempo real en la UI con opciones de interacción (marcar como leído, archivar).
-- AFU-170 - Diseñar vista para configurar y aplicar promociones en la UI.
+- AFU-169 - Diseñar componente de notificaciones en tiempo real con opciones de interacción (marcar como leído, archivar).
+- AFU-170 - Diseñar vista para configurar y aplicar promociones.
 - AFU-171 - Diseñar vista de sucursales con filtros y reportes específicos.
 - AFU-172 - Mostrar impuestos aplicados en formularios de venta y órdenes de servicio.
-- AFU-173 - Diseñar componente de filtros avanzados en la UI con soporte para condiciones anidadas.
+- AFU-173 - Diseñar componente de filtros avanzados con soporte para condiciones anidadas.
 - AFU-174 - Implementar sanitización de entradas en formularios para prevenir XSS.
 - AFU-175 - Implementar vistas personalizadas del dashboard según el rol del usuario.
 - AFU-176 - Configurar menús dinámicos que muestren solo opciones relevantes según permisos.
 - AFU-177 - Implementar modo offline para operaciones críticas (por ejemplo, registro de ventas o servicios) con sincronización automática al reconectar.
 - AFU-178 - Configurar la UI como Progressive Web App (PWA) para soporte offline y experiencia nativa.
 - AFU-179 - Optimizar componentes visuales para pantallas pequeñas (por ejemplo, POS en móviles).
-- AFU-180 - Diseñar componente de pago en la UI con soporte para redirección a pasarelas externas.
-- AFU-181 - Diseñar componente de mensajería en la UI para enviar notificaciones directas a clientes.
+- AFU-180 - Diseñar componente de pago con soporte para redirección a pasarelas externas.
+- AFU-181 - Diseñar componente de mensajería para enviar notificaciones directas a clientes.
 - AFU-182 - Realizar pruebas de usabilidad con usuarios finales para validar flujos críticos (por ejemplo, registro de ventas, órdenes de servicio).
 - AFU-183 - Implementar pruebas A/B para layouts o componentes clave (por ejemplo, formulario de ventas).
 - AFU-184 - Configurar pruebas visuales automatizadas con herramientas como Percy o BackstopJS.
-- AFU-185 - Crear guías interactivas en la UI para nuevos usuarios (por ejemplo, tutoriales paso a paso).
-- AFU-186 - Diseñar flujo de onboarding en la UI con pasos guiados para configuración inicial.
+- AFU-185 - Crear guías interactivas para nuevos usuarios (por ejemplo, tutoriales paso a paso).
+- AFU-186 - Diseñar flujo de onboarding con pasos guiados para configuración inicial.
 - AFU-187 - Diseñar vista para administrar configuraciones específicas por tenant.
-- AFU-188 - Implementar soporte para múltiples monedas y tasas de cambio en la UI.
+- AFU-188 - Implementar soporte para múltiples monedas y tasas de cambio.
 
 ## Akira Flex UI – Integración con Shared Lib (Tenancy & Auth)
 
@@ -740,3 +740,18 @@
 - AFU-191 - Mostrar información de módulos funcionales y ciclo de facturación usando enums y tipos de la shared lib
 - AFU-192 - Implementar lógica de login y manejo de sesión usando LoginRequestDto, LoginResponseDto y JwtPayload de la shared lib
 - AFU-193 - Mostrar roles y permisos de AdminUser usando AdminRole de la shared lib
+
+## Configuración técnica UI
+
+- AFU-194 - Implementar ESLint con reglas específicas para Angular
+- AFU-195 - Implementar Prettier para formato consistente
+- AFU-196 - Configurar pruebas unitarias y de integración.
+- AFU-197 - Configurar commitlint y husky para validación de commits convencionales
+- AFU-198 - Implementar Tailwind CSS 4.
+- AFU-199 - Instalar librería compartida y agregar carpeta 'definitions'
+- AFU-200 - Optimizar bundle eliminando referencias innecesarias a CSS
+- AFU-201 - Implementar soporte para temas oscuros y claros.
+- AFU-202 - Implementar soporte para diseño responsivo.
+- AFU-203 - Implementar soporte para accesibilidad (a11y).
+- AFU-204 - Implementar soporte para internacionalización (i18n).
+- AFU-205 - Implementar JSDoc para documentación de código.
